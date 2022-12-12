@@ -48,7 +48,7 @@
       <section class="background">
         <div>
           <h1 class="titulo-principal">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="btn-primary" type="button" data-modal-open>
+          <button class="btn-primary" type="button" id="data-modal-open">
             Solicite nuestro servicio
           </button>
         </div>
@@ -366,19 +366,14 @@
       </div>
     </footer>
     <!--ventana modal-->
-    <div clas="backdrop" data-modal>
-      <div clase="backdrop-modal">
-        <p>
-          Blanco
-        </p>
-        <button class="backdrop-modal-close" data-modal-close>
-          <svg class="backdrop-close">
-            <use href="/images/svg/icons.svg#cerrar">
-            </use>
-          </svg>
-        </button>
-      </div>
-    </div>
+    <div class="backdrop is-hidden" id="data-modal">
+    <div class="modal">
+      <button id="data-modal-close" class="modal-close">
+        <svg class="close">
+          <use href="./images/svg/icons.svg#cerrar">
+          </use>
+        </svg>
+      </button>
     <script src="./js/modal.js"></script>
   </body>
 </html>
