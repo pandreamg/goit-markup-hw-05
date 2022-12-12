@@ -45,12 +45,15 @@
     </header>
     <main>
       <!--Titulo principal-->
-      <section class="fondo">
-        <h1 class="titulo-principal">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="btn-primary" type="button">
-          Solicite nuestro servicio
-        </button>
+      <section class="background">
+        <div>
+          <h1 class="titulo-principal">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button class="btn-primary" type="button" data-modal-open>
+            Solicite nuestro servicio
+          </button>
+        </div>
       </section>
+
       <!--Primera Sección-->
       <section class="section">
         <div class="container">
@@ -362,5 +365,20 @@
         </aside>
       </div>
     </footer>
+    <!--ventana modal-->
+    <div clas="backdrop" data-modal>
+      <div clase="backdrop-modal">
+        <p>
+          Blanco
+        </p>
+        <button class="backdrop-modal-close" data-modal-close>
+          <svg class="backdrop-close">
+            <use href="/images/svg/icons.svg#cerrar">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

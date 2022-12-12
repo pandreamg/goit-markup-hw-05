@@ -23,27 +23,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-.btn-primary {
-    width: 261px;
-    height: 50px;
-    background-color: #2196f3;
-    color: var(--color-white);
-    font-family: var(--font-principal);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    outline: none;
-    text-transform: capitalize;
-    padding: 10px 20px;
-}
-.btn-primary:hover {
-    background-color: #188ce8;
-}
 .container {
     padding: 0 15px;
     max-width: 1200px;
@@ -167,7 +146,7 @@ header .Headoard .header-contact li .contact {
     fill:#2196F3;
 }
 /*-----titulo principal-----*/
-.fondo {
+.background {
     background: linear-gradient(
       0deg,
     rgba(47, 48, 58, 0.4),
@@ -179,12 +158,33 @@ header .Headoard .header-contact li .contact {
     position: relative;
     text-align: center;
 }
-.fondo .titulo-principal {
+.background .titulo-principal {
     width: 500px;
     margin: 20px auto;
     font-size: 44px;
     color: var(--color-white);
     text-transform: capitalize;
+}
+.btn-primary {
+    width: 261px;
+    height: 50px;
+    background-color: #2196f3;
+    color: var(--color-white);
+    font-family: var(--font-principal);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+.btn-primary:hover {
+    background-color: #188ce8;
 }
 /*--primera seccion--*/
 .features-item {
@@ -530,4 +530,43 @@ address .footer-email, .footer-phone{
   }
 .icons-footer:hover path {
     fill: #2196f3;
+  }
+  /** ventana modal**/
+.backdrop {
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .backdrop.is-hidden {
+    display: none;
+  }
+.backdrop-modal {
+    position: relative;
+    margin: auto;
+    width: 528px;
+    height: 581px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+.backdrop-close {
+    width: 18px;
+    height: 18px;
+    fill: #000000;
+  }
+.backdrop-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
