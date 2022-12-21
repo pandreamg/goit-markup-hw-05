@@ -99,7 +99,7 @@ header nav .nav-options {
   position: absolute;
   display: block;
   content: "";
-  width: 2.5%;
+  width: 3%;
   height: 5px;
   background: #2196f3;
   border-radius: 4px;
@@ -109,7 +109,7 @@ header nav .nav-options {
   position: absolute;
   display: block;
   content: "";
-  width:3.2%;
+  width: 3.5%;
   height: 5px;
   background: #2196f3;
   border-radius: 4px;
@@ -466,30 +466,35 @@ header .Headoard .header-contact li .contact {
   margin-bottom: 10px;
   margin-left: 24px;
 }
-.card-image {
-  position: relative;
-  overflow: hidden;
-}
 .card-emergent {
   position: absolute;
-  top: 0;
-  height: 294px;
-  width: 370px;
+  bottom: 0;
+  left: 0;
+  
+  height: 100%;
+  width: 100%;
+  
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--color-white);
   font-family: var(--font-principal);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  background: rgba(33, 150, 243, 0.9);
-  color: var(--color-white);
-  padding: 63px 24px;
   letter-spacing: 0.03em;
-  transform: translateY(150%);
-  transform: trasform 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .card-image:hover .card-emergent {
   transform: translateY(0%);
+}
+.tarjeta {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
 }
 /*--Footer--*/
 footer {
@@ -557,7 +562,7 @@ address .footer-email,
 }
 /** ventana modal**/
 .backdrop.is-hidden {
-  display: none;
+  visibility: hidden;
   opacity:0;
   pointer-events: none;
 }
